@@ -67,10 +67,18 @@ h2 {
     vertical-align: middle;
 }
 
-.search {
+.Search {
     border: none;
     height: 100%;
     width: 100%;
     padding: 0px 5px;
     border-radius: 50px;
+    font-weight: 500;
+    background-color: #191F2B;
+    
 }
+
+.Search:focus {
+    outline: none;
+}
+
