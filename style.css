@@ -39,4 +39,9 @@ h2 {
     color: white;
     margin-top: 45px;
     border-bottom: 1;
+    display:block;
+    width: 3em;
+    max-width:70%;
+    border-bottom: 0.1em solid white;
+    margin: 2em auto 0;
 }
