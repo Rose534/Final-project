@@ -2,10 +2,12 @@
 const btn = document.getElementById("logButton")
 const show = document.getElementById("leftbar")
 const show2 = document.getElementById("searchbar")
+const login = document.getElementById("login")
+const everything = document.getElementById("everything")
 
 function onclic() {
-    btn.addEventListener('click', () => {
-    if (btn == 'click') {
-         btn = style.visibility = 'hidden'; 
+    
+         login.style.visibility = 'hidden'; 
+         
     }
-})}
+
