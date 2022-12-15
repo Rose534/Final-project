@@ -6,11 +6,8 @@ const login = document.getElementById("login")
 
 
 
-btn.addEventListener('click', () => { 
+btn.addEventListener('click', (e) => { 
     login.style.display = "none"
-    if (login.style.display === "none") {
-        delete login;
-    }
-    
-    
+     return false;
+   
 })
