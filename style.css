@@ -50,7 +50,7 @@ h2 {
 
 #searchbar {
     margin: auto;
-    margin-top: 3%;
+    margin-top: -36%;
     position: relative;
     width: 600px;
     height: 42px;
@@ -58,6 +58,7 @@ h2 {
     padding: 0px 5px;
     background-color: #191F2B;
     border-radius: 10px;
+    align-items: center;
 
 }
 
@@ -94,7 +95,7 @@ body {
     overflow: hidden;
     padding: 75px;
     background: black;
-    
+    margin-top: 100px;
 
 }
 
@@ -127,10 +128,5 @@ label {
     padding-left: 7px;
     color:black;
     font-size: 16px;
-
-}
-#showlogin {
-   
-   
 
 }
