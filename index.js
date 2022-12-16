@@ -10,9 +10,9 @@ const search_url = "https://api.themoviedb.org/3/search/movie?api_key=73767b2552
 
 //Search feature
 
-const form = document.getElementById('searchbar')
-const search = document.getElementById('Search')
-const main = document.getElementById('movies-watchlist')
+const form = document.getElementById('form')
+const search = document.getElementById('search')
+const main = document.getElementById('main')
 
 getMovies(Movies)
 async function getMovies(url){
@@ -24,11 +24,11 @@ console.log(data.results);
 function displayMovies(movies){
     main.innerHTML = ' '
     movies.forEach((movie)=>{
-        const{title,poster_path,vote_average,overview}= movie
-        const movieElement=document.createElement('div')
-        movieElement.classList.add('movie')
-        movieElement.innerHTML=`
-        <img src= "${image_Path} + ${poster_path}" alt= "${title}"/>
+        const {title,poster_path,vote_average,overview}= movie
+        const moviesElement=document.createElement('div')
+        moviesElement.classList.add('movie')
+        moviesElement.innerHTML=`
+        <img src= "${image_Path + poster_path}" alt= "${title}">
         <div class= 'movie-info'>
         <h3>${title}</h3>
         <span class="${getClassesByRating(vote_average)}"> ${vote_average} </span>
@@ -38,7 +38,7 @@ function displayMovies(movies){
         </div>
         </div>`
 
-        main.appendChild(movieElement)
+        main.appendChild(moviesElement)
     })
 }
 
