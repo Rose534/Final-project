@@ -26,4 +26,9 @@ btn.addEventListener('click', searched_movies)
 async function searched_movies () {
     const data = await searchmovie (input) 
     console.log(data);    
+
+    maingridtitle.innerHTML = `search Results...`
+    maingrid.innerHTML = data.map(e => {
+        return ``
+    })
     }

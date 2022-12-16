@@ -77,13 +77,19 @@ h2 {
     border-radius: 50px;
     font-weight: 500;
     background-color: #191F2B;
-    
+    color: white;
 }
+
+.Search::placeholder {
+    color: white;
+}
+
+
 
 .Search:focus {
     outline: none;
 }
-*/
+
 
 body {
     background-color:  #101825;
@@ -193,4 +199,5 @@ label {
 .card:hover .img {
     transform: scale(1.1);
 }
+
 
