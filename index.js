@@ -12,12 +12,45 @@ const search_url = "https://api.themoviedb.org/3/search/movie?api_key=73767b2552
 
 const form = document.getElementById('searchbar')
 const search = document.getElementById('Search')
-const main = document.getElementById('movie-grid')
+const main = document.getElementById('movies-watchlist')
 
+getMovies(Movies)
 async function getMovies(url){
 const res = await fetch(url)
-const data = res.json()
+const data = await res.json()
 console.log(data.results);
+}
+function displayMovies(movies){
+    main.innerHTML=''
+    movies.forEach((movie)=>{
+        const{titlr,poster_path,vote_average,overview}= movie
+        const movieElement=document.createE1('div')
+        movieElement.classList.add('movie')
+        movieElement.innerHTML=`
+        <img src= "${image_Path} + ${poster_path}" alt= "${title}"/>
+        <div class= 'movie-info'>
+        <h3>${title}</h3>
+        <span class="${getClassesByRating(vote_average)}"> ${vote_average} </span>
+        <div class="overview">
+        <h3>Overview</h3>
+        ${overview}
+        </div>
+        </div>`
+
+        main.appendChild(movieElement)
+    })
+}
+
+function getClassesByRating(rating) {
+    if(rating>=8){
+        return 'green'
+    }
+    else if (rating>=5){
+        return 'orange'
+    }
+    else {
+    return 'red'
+    }
 }
 
 form.addEventListener('submit', (e)=>{
@@ -25,5 +58,10 @@ form.addEventListener('submit', (e)=>{
     const searchValue = search.value 
     if(searchValue && searchValue !=='') {
         Movies(search_url+searchValue)
+        searchValue=''
+
+    }
+    else{
+        window.location.reload()
     }
 })
