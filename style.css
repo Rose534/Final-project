@@ -49,9 +49,9 @@ h2 {
     margin-left: 100px;
 }
 
-#searchbar {
+#search {
     margin: auto;
-    margin-top: 3%;
+    margin-top: 2%;
     position: relative;
     width: 600px;
     height: 42px;
@@ -59,6 +59,8 @@ h2 {
     padding: 0px 5px;
     background-color: #191F2B;
     border-radius: 10px;
+    margin-left: 390px;
+    color: white;
     
 
 }
@@ -139,79 +141,55 @@ label {
 
 }
 
-.card{
-    width: clamp(150px, 95vw, 250px);
-    box-shadow: 0 0 .5rem pink;
-    outline: 2px, solid pink;
-    overflow: hidden;
-    color: white;
-    cursor: pointer;
-    border-radius: .5rem;
-    
-}
-
-.img {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-    position: relative;
-    transition: 200ms ease-in-out transform;
-
-}
-
-.img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.img::before{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 30%;
-    background-image: linear-gradient(to top, #151515, transparent);
-}
-.info {
-    padding: 2rem 1rem 1rem;
-}
-.info h5 {
-    margin-bottom: 0.5rem;
-    font-size: 1.3rem;
-}
-.info h2 {
-    margin-bottom: 0.5rem;
-    font-size: 1.3rem;
-}
-.single-info{
+#main {
     display: flex;
+    flex-wrap: wrap;
+    margin-left: 300px;
+
+   
+
+}
+.movie {
+    width: 300px;
+    margin: 1rem;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.movie img {
+    width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.movie-info {
+    color: white;
+    display:flex;
     align-items: center;
     justify-content: space-between;
-    font-size: .8rem;
-    margin: .2rem 0;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 1px;
 
 }
-.movies-watchlist {
-    margin-left: 330px;
+.movie-info span{
+    background-color: var(--secondary-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
 }
 
-.card:hover .img {
-    transform: scale(1.1);
+.movie-info span.green{
+    color: lightgreen;
 }
 
-.movie-grid {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 2rem;
-    
+.movie-info span.orange{
+    color: orange;
 }
 
-#watch {
-    color: white;
-    align-items: flex-start;
-    font-size: 30px;
-    margin-left: 400px;
-    margin-top: 18px;
+.movie-info span.red{
+    color: red;
 }
