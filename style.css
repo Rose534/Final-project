@@ -134,14 +134,36 @@ label {
 }
 
 .card{
-    width: clamp(150px, 95vx, 250px);
+    width: clamp(150px, 95vw, 250px);
     box-shadow: 0 0 .5rem pink;
     outline: 2px, solid pink;
     overflow: hidden;
     color: white;
     cursor: pointer;
+    border-radius: .5rem;
+    
 }
 
 .img {
-    
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    transition: 200ms ease-in-out transform;
+
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    background-image: linear-gradient(to top, #151515, transparent);
 }
