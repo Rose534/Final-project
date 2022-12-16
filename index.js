@@ -10,7 +10,7 @@ const search_url = "https://api.themoviedb.org/3/search/movie?api_key=73767b2552
 
 //Search feature
 
-/*const form = document.getElementById('form')
+const form = document.getElementById('form')
 const search = document.getElementById('search')
 const main = document.getElementById('main')
 
@@ -58,11 +58,11 @@ form.addEventListener('submit', (e)=>{
     e.preventDefault()
     const searchValue = search.value 
     if(searchValue && searchValue !=='') {
-        Movies(search_url+searchValue)
-        searchValue=''
+        getMovies(search_url+searchValue)
+        searchValue = ''
 
     }
     else{
         window.location.reload()
     }
-})*/
+})
