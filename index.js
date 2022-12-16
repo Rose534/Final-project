@@ -8,3 +8,7 @@ const image = "https://image.tmdb.org/t/p/original/"
 
 const input = document.querySelector(".searchbar")
 const btn = document.querySelector(".search")
+const maingridtitle = document.querySelector(".Watchlist h5")
+const maingrid = document.querySelector(".Watchlist .movie-grid")
+
+btn.addEventListener('click', )
