@@ -4,7 +4,7 @@ const API_KEY = "73767b2552b171f42316e0608f521656";
 
 const https = "https://api.themoviedb.org/3";
 
-const image = "https://image.tmdb.org/t/p/original/"
+const image = "https://image.tmdb.org/t/p/original/";
 
 //Search feature
 
