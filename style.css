@@ -132,3 +132,16 @@ label {
     font-size: 16px;
 
 }
+
+.card{
+    width: clamp(150px, 95vx, 250px);
+    box-shadow: 0 0 .5rem pink;
+    outline: 2px, solid pink;
+    overflow: hidden;
+    color: white;
+    cursor: pointer;
+}
+
+.img {
+    
+}
