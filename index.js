@@ -18,13 +18,14 @@ getMovies(Movies)
 async function getMovies(url){
 const res = await fetch(url)
 const data = await res.json()
+displayMovies(data.results)
 console.log(data.results);
 }
 function displayMovies(movies){
-    main.innerHTML=''
+    main.innerHTML = ' '
     movies.forEach((movie)=>{
-        const{titlr,poster_path,vote_average,overview}= movie
-        const movieElement=document.createE1('div')
+        const{title,poster_path,vote_average,overview}= movie
+        const movieElement=document.createElement('div')
         movieElement.classList.add('movie')
         movieElement.innerHTML=`
         <img src= "${image_Path} + ${poster_path}" alt= "${title}"/>
