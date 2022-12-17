@@ -39,8 +39,8 @@ function displayMovies(movies){
         const {title,poster_path,vote_average,overview}= movie
         const moviesElement=document.createElement('div')
         moviesElement.classList.add('movie')
-        moviesElement.innerHTML=`
-        <div class="card" ata-id="${e.id}">
+        moviesElement.innerHTML = `
+        <div class="card">
         <img id = "btn" src= "${image_Path + poster_path}" alt= "${title}">
         <div class= 'movie-info'>
         <h3>${title}</h3>
@@ -63,7 +63,7 @@ function displayMovies(movies){
 
 }
 
-async function get_movie_by_id (id) {
+async function get_movie_by_id (title) {
     const resp = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`)
     const respData = await resp.json()
     return respData
