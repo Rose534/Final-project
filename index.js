@@ -8,13 +8,13 @@ const image_Path = "https://image.tmdb.org/t/p/original/";
 
 const search_url = "https://api.themoviedb.org/3/search/movie?api_key=73767b2552b171f42316e0608f521656&query=\""
 
-//Search feature
+
 
 const form = document.getElementById('form')
 const search = document.getElementById('search')
 const main = document.getElementById('main')
 
-
+//Search feature
 //fetching popular movies from API
 getMovies(Movies)
 async function getMovies(url){
@@ -85,3 +85,9 @@ form.addEventListener('submit', (e)=>{
 })
 
 
+//Navigation bar
+
+const contactbtn = document.getElementById('contact')
+contactbtn.addEventListener('click', () => {
+
+})

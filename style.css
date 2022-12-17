@@ -203,14 +203,8 @@ label {
     bottom: 0;
     right: 0;
     max-height: 100%;
-    transform: translateY(101%);
-    transition: transform 0.3s ease;
     text-align: center;
   
-}
-
-.movie:hover .overview {
-    transform: translateY(0);
 }
 
 
