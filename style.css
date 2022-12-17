@@ -321,3 +321,43 @@ p{
     right: 0;
 }
 
+.circle{
+    clip-path: (50% at 50% 50%);
+    background: #7e53f9;
+    opacity:0.9;
+    position: absolute;
+    bottom: 68px;
+    width: 68px;
+    height: 150px;
+    right: 94px;
+}
+
+.row_right_side{
+    width: 110px;
+    padding: 30px;
+}
+
+form{
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row_right_side{
+    width: 50%;
+    font-weight: bold;
+}
+
+.row_right_side input{
+    width: 90px;
+    border: none;
+    border-bottom: 2px solid rgb(149,149,149);
+    outline: none;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+
+
+
