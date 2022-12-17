@@ -95,10 +95,13 @@ contactbtn.addEventListener('click', () => {
 })
 
 //Terms and conditions navigation button
+const conditions = document.getElementById('terms_conditions')
 const termsbtn = document.getElementById('terms')
 termsbtn.addEventListener('click', () => {
     search.style.display = "none"
     main.style.display = "none"
+    conditions.removeAttribute('hidden')
+    conditions.style.display = "flex"
 
 })
   

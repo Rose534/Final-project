@@ -14,6 +14,7 @@ body {
     padding-top: 60px; 
     transition: 0.5s; 
     float: left;
+    
    
 }
 
@@ -35,6 +36,7 @@ h3 {
     margin-left: 18px;
     margin-top: 70px;
     font-size: 15px;
+    cursor: pointer;
 }
 
 h2 {
@@ -210,4 +212,11 @@ label {
 
 h7 {
    font-weight: bold;    
+}
+
+#terms_conditions {
+    display: none;
+    color: white;
+    margin-left: 300px;
+
 }
