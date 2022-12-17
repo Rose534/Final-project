@@ -85,9 +85,34 @@ form.addEventListener('submit', (e)=>{
 })
 
 
-//Navigation bar
+//contact us navigation bar button
 
 const contactbtn = document.getElementById('contact')
 contactbtn.addEventListener('click', () => {
+    search.style.display = "none"
+    main.style.display = "none"
 
 })
+
+//Terms and conditions navigation button
+const termsbtn = document.getElementById('terms')
+termsbtn.addEventListener('click', () => {
+    search.style.display = "none"
+    main.style.display = "none"
+
+})
+  
+//wishlist navigation button
+const wishlistbtn = document.getElementById('wishlist')
+wishlistbtn.addEventListener('click', () => {
+    search.style.display = "none"
+    main.style.display = "none"
+
+})
+
+//home navigation reload button
+
+const homebtn = document.getElementById('home')
+homebtn.addEventListener('click', function(){
+    location.reload();
+} )
