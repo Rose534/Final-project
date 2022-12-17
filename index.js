@@ -14,7 +14,7 @@ const form = document.getElementById('form')
 const search = document.getElementById('search')
 const main = document.getElementById('main')
 
-function add_click_effect_to_card (cards) {
+/*function add_click_effect_to_card (cards) {
     cards.forEach(card => {
         card.addEventListener('click', () => show_popup(card))
     })
@@ -87,6 +87,6 @@ form.addEventListener('submit', (e)=>{
     }
 
     
-})
+})*/
 
 
