@@ -14,15 +14,6 @@ const form = document.getElementById('form')
 const search = document.getElementById('search')
 const main = document.getElementById('main')
 
-function add_click_effect_to_card (cards) {
-    cards.forEach(card => {
-        card.addEventListener('click', () => show_popup(card))
-    })
-}
-//creating popup
-function show_popup(card) {
-    console.log('popup is shown' + card);
-}
 
 //fetching popular movies from API
 getMovies(Movies)
@@ -57,17 +48,9 @@ function displayMovies(movies){
     })
     
     
-    //popup to appear when we click the film.
-    const cards = document.querySelectorAll('.card')
-    add_click_effect_to_card(cards)
 
 }
 
-async function get_movie_by_id (title) {
-    const resp = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`)
-    const respData = await resp.json()
-    return respData
-}
 
 
 //change color with different ratings.
