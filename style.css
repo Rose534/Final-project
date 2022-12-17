@@ -359,5 +359,36 @@ form{
     font-size: 16px;
 }
 
+.row_right_side input:hover{
+    border-bottom: 2px #3e2093;
+    cursor: pointer;
+
+}
+
+.row_right_side form textarea{
+    width: 100%;
+    height: 80px;
+    resize: none;
+    border: none;
+    outline: none;
+    border: 1px rgb(149,149,149);
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: -18px;
+}
+
+.row_right_side button {
+    width: 200px;
+    height: 50px;
+    background: #3e2093;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    right: 60px;
+    bottom: -18px;
+}
+
 
 
