@@ -103,6 +103,7 @@ termsbtn.addEventListener('click', () => {
     search.style.display = "none"
     main.style.display = "none"
     contactpg.style.display = "none"
+    
     conditions.removeAttribute('hidden')
     conditions.style.display = "flex"
     
