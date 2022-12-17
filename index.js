@@ -39,7 +39,7 @@ function displayMovies(movies){
         <span class="${getClassesByRating(vote_average)}"> ${vote_average} </span>
         <div id="overview">
         <br>
-        <h7>Description</h7>
+        <h7>Description:</h7>
         <br><br>
         ${overview}
         </div>
@@ -86,13 +86,14 @@ form.addEventListener('submit', (e)=>{
 
 
 //contact us navigation bar button
-
+const contactpg = document.getElementById('contactpg')
 const contactbtn = document.getElementById('contact')
 contactbtn.addEventListener('click', () => {
     search.style.display = "none"
     main.style.display = "none"
-    conditions.style.display = "none"
-
+    
+    contactpg.removeAttribute('hidden')
+    contactpg.style.display = "flex"
 })
 
 //Terms and conditions navigation button
@@ -101,8 +102,10 @@ const termsbtn = document.getElementById('terms')
 termsbtn.addEventListener('click', () => {
     search.style.display = "none"
     main.style.display = "none"
+    contactpg.style.display = "none"
     conditions.removeAttribute('hidden')
     conditions.style.display = "flex"
+    
 
 })
   
@@ -111,6 +114,7 @@ const wishlistbtn = document.getElementById('wishlist')
 wishlistbtn.addEventListener('click', () => {
     search.style.display = "none"
     main.style.display = "none"
+    contactpg.style.display = "none"
     conditions.style.display = "none"
 
 })
