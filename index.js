@@ -125,3 +125,12 @@ const homebtn = document.getElementById('home')
 homebtn.addEventListener('click', function(){
     location.reload();
 } )
+
+//contact us submit button
+let btnsubmit = document.getElementById('submitbtn')
+let inputs = document.querySelectorAll('input') 
+
+btnsubmit.addEventListener('click', () => {
+    inputs.forEach(input => input.value = '');
+
+})
