@@ -14,6 +14,15 @@ const form = document.getElementById('form')
 const search = document.getElementById('search')
 const main = document.getElementById('main')
 
+function add_click_effect_to_card (cards) {
+    cards.forEach(card => {
+        card.addEventListener('click', () => show_popup(card))
+    })
+}
+//creating popup
+function show_popup(card) {
+    console.log('popup is shown' + card);
+}
 
 
 getMovies(Movies)
@@ -46,11 +55,13 @@ function displayMovies(movies){
 
         
     })
+    const cards = document.querySelectorAll('.card')
+    add_click_effect_to_card(cards)
 
 }
 
 
-
+//change color with different ratings.
 function getClassesByRating(rating) {
     if(rating>=8){
         return 'green'
