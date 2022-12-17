@@ -168,7 +168,6 @@ label {
 
 .movie-info {
     color: white;
-    display:flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem 1rem 1rem;
@@ -177,6 +176,7 @@ label {
 }
 .movie-info span{
     background-color: var(--secondary-color);
+    display: flex;
     padding: 0.25rem 0.5rem;
     border-radius: 3px;
     font-weight: bold;
@@ -196,7 +196,7 @@ label {
 
 .overview{
     background-color: black;
-    color: var(--primary-color);
+    color: white;
     padding: 2rem;
     position: absolute;
     left: 0;
@@ -214,4 +214,6 @@ label {
 }
 
 
-
+h7 {
+   font-weight: bold;    
+}

@@ -32,12 +32,15 @@ function displayMovies(movies){
         moviesElement.classList.add('movie')
         moviesElement.innerHTML = `
         <div class="card">
-        <img id = "btn" src= "${image_Path + poster_path}" alt= "${title}">
+        <img src= "${image_Path + poster_path}" alt= "${title}">
         <div class= 'movie-info'>
-        <h3>${title}</h3>
+        <h7>${title}</h7>
+        <br>
         <span class="${getClassesByRating(vote_average)}"> ${vote_average} </span>
         <div id="overview">
-        <h3>Description</h3>
+        <br>
+        <h7>Description</h7>
+        <br><br>
         ${overview}
         </div>
         </div>
