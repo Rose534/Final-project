@@ -216,7 +216,15 @@ h7 {
 
 #terms_conditions {
     display: none;
-    color: white;
+    color: black;
     margin-left: 300px;
+    width: 1300px;  
+    z-index: 1;
+    top: 0; 
+    left: 0;
+    background-color: white; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+    float: left;
 
 }

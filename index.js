@@ -91,6 +91,7 @@ const contactbtn = document.getElementById('contact')
 contactbtn.addEventListener('click', () => {
     search.style.display = "none"
     main.style.display = "none"
+    conditions.style.display = "none"
 
 })
 
@@ -110,6 +111,7 @@ const wishlistbtn = document.getElementById('wishlist')
 wishlistbtn.addEventListener('click', () => {
     search.style.display = "none"
     main.style.display = "none"
+    conditions.style.display = "none"
 
 })
 
