@@ -14,7 +14,7 @@ const form = document.getElementById('form')
 const search = document.getElementById('search')
 const main = document.getElementById('main')
 
-/*function add_click_effect_to_card (cards) {
+function add_click_effect_to_card (cards) {
     cards.forEach(card => {
         card.addEventListener('click', () => show_popup(card))
     })
@@ -24,7 +24,7 @@ function show_popup(card) {
     console.log('popup is shown' + card);
 }
 
-
+//fetching popular movies from API
 getMovies(Movies)
 async function getMovies(url){
 const res = await fetch(url)
@@ -40,12 +40,12 @@ function displayMovies(movies){
         const moviesElement=document.createElement('div')
         moviesElement.classList.add('movie')
         moviesElement.innerHTML=`
-        <div class="card">
+        <div class="card" ata-id="${e.id}">
         <img id = "btn" src= "${image_Path + poster_path}" alt= "${title}">
         <div class= 'movie-info'>
         <h3>${title}</h3>
         <span class="${getClassesByRating(vote_average)}"> ${vote_average} </span>
-        <div class="overview">
+        <div id="overview">
         <h3>Overview</h3>
         ${overview}
         </div>
@@ -55,9 +55,18 @@ function displayMovies(movies){
 
         
     })
+    
+    
+    //popup to appear when we click the film.
     const cards = document.querySelectorAll('.card')
     add_click_effect_to_card(cards)
 
+}
+
+async function get_movie_by_id (id) {
+    const resp = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`)
+    const respData = await resp.json()
+    return respData
 }
 
 
@@ -87,6 +96,6 @@ form.addEventListener('submit', (e)=>{
     }
 
     
-})*/
+})
 
 
