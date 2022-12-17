@@ -252,4 +252,40 @@ p{
     background: #3e2093;
     color: #eee;
     padding-top: 30px;
+    width: 450px;
+    border-radius: 20px;
+    height: 550px;
+    position: relative;
 }
+
+.row_left_side h8{
+    font-size: 28;
+    color: white;
+}
+
+.row_left_side p{
+    text-align: left;
+    color: rgb(175,175,175);
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.row_left_side a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.row_left_side i{
+    display: flex;
+    padding: 30px 0;
+    color: #fa949d;
+}
+
+.row_left_side i span {
+    margin-left: 20px;
+    color: white;
+
+}
+
