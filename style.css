@@ -225,4 +225,31 @@ h7 {
     margin-left: 300px;
 }
 
-/**/
+/*contact us page*/
+h8{
+    text-align: center;
+    font-size: 22px;
+    padding-top: 20px;
+    font-weight: 900px;
+    color: white;
+}
+
+p{
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(80,77,77);
+    font-size: 20px;
+}
+
+.container{
+    display: flex;
+    width: calx (100% - 80px);
+    margin: 50px 40px;
+
+}
+
+.row_left_side {
+    background: #3e2093;
+    color: #eee;
+    padding-top: 30px;
+}
