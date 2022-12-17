@@ -194,15 +194,24 @@ label {
     color: red;
 }
 
-#overview{
-    background-color: var(--secondary-color);
+.overview{
+    background-color: black;
     color: var(--primary-color);
     padding: 2rem;
     position: absolute;
-    left: 90;
-    bottom: 50;
+    left: 0;
+    bottom: 0;
     right: 0;
     max-height: 100%;
     transform: translateY(101%);
     transition: transform 0.3s ease;
+    text-align: center;
+  
 }
+
+.movie:hover .overview {
+    transform: translateY(0);
+}
+
+
+
