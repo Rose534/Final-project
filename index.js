@@ -14,6 +14,8 @@ const form = document.getElementById('form')
 const search = document.getElementById('search')
 const main = document.getElementById('main')
 
+
+
 getMovies(Movies)
 async function getMovies(url){
 const res = await fetch(url)
@@ -21,6 +23,7 @@ const data = await res.json()
 displayMovies(data.results)
 console.log(data.results);
 }
+
 function displayMovies(movies){
     main.innerHTML = ' '
     movies.forEach((movie)=>{
@@ -28,7 +31,8 @@ function displayMovies(movies){
         const moviesElement=document.createElement('div')
         moviesElement.classList.add('movie')
         moviesElement.innerHTML=`
-        <img src= "${image_Path + poster_path}" alt= "${title}">
+        <div class="card">
+        <img id = "btn" src= "${image_Path + poster_path}" alt= "${title}">
         <div class= 'movie-info'>
         <h3>${title}</h3>
         <span class="${getClassesByRating(vote_average)}"> ${vote_average} </span>
@@ -36,11 +40,16 @@ function displayMovies(movies){
         <h3>Overview</h3>
         ${overview}
         </div>
+        </div>
         </div>`
-
         main.appendChild(moviesElement)
+
+        
     })
+
 }
+
+
 
 function getClassesByRating(rating) {
     if(rating>=8){
@@ -65,4 +74,8 @@ form.addEventListener('submit', (e)=>{
     else{
         window.location.reload()
     }
+
+    
 })
+
+
