@@ -178,6 +178,7 @@ label {
     margin-left: 300px;
     overflow: hidden;
     height: 100%;
+    position: relative;
 
    
 
@@ -197,6 +198,7 @@ label {
 
 *{
     box-sizing: border-box;
+    
 }
 
 .movie-info {
@@ -251,77 +253,6 @@ h7 {
     
 
 }
-
-
-/*contact us page
-#contactus {
-    width: 450px;
-    background: white;
-    padding: 30px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-    margin-left: 550px;
-    margin-top: 100px;
-
-}
-
-#contactus #inputdata {
-    height: 40px;
-    width: 100%;
-    position: relative;
-
-}
-
-#contactus #inputdata input{
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    font-size: 17px;
-    border-bottom: 2px solid silver;
-    color: black;
-}
-
-#inputdata input:focus ~ label,
-#inputdata input:valid ~ label  {
-    transform: translateY(-20px);
-    font-size: 15px;
-    color: #4158d0
-    
-
-}
-
-#contactus #inputdata label {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    color: grey;
-    pointer-events: none;
-    transition: all 0.3s ease;
-}
-
-#contactus #inputdata .underline {
-    position: absolute;
-    bottom: 0px;
-    height: 2px;
-    width: 100%;
-}
-
-#inputdata .underline:before{
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 100%;
-    background: black;
-    transform: scaleX(0);
-    transform: transform 0.3s ease;
-}
-
-#inputdata input:focus ~ .underline:before,
-#inputdata input:valid ~ .underline:before {
-    transform: scaleX(1);
-
-    
-   }*/
 
    #contactus {
     margin-left: 450px;
@@ -406,16 +337,16 @@ h9{
 
 .img2 {
     display: flex;
-    margin-left: 300px;
+    margin-left: 50px;
     align-items: center;
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
   
   .img2 img {
-    width: 100%;
+    width: 30%;
     height: 30px;
     border-radius: 5px;
   }
@@ -424,6 +355,7 @@ h9{
     font-size: 1.5rem;
     font-weight: bold;
     margin: 10px 0;
+    color: white;
   }
   
   .img2 p {

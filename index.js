@@ -20,37 +20,37 @@ const login = document.getElementById('login')
 
 const storedMovies = [];
 for (let i = 0; i < localStorage.length; i++) {
-  const key = localStorage.key(i);
-  const value = localStorage.getItem(key);
-  storedMovies.push(JSON.parse(value));
+    const key = localStorage.key(i);
+    const value = localStorage.getItem(key);
+    storedMovies.push(JSON.parse(value));
 }
 
 // Display the stored movies in the watchpg element
 storedMovies.forEach((movie) => {
-  const movieElement = document.createElement('div');
-  movieElement.innerHTML = `
+    const movieElement = document.createElement('div');
+    movieElement.innerHTML = `
     <h3>${movie.title}</h3>
     <img src="${image_Path + movie.poster_path}" alt="${movie.title}">
     <p>${movie.overview}</p>
   `;
-  watchpg.appendChild(movieElement);
+    watchpg.appendChild(movieElement);
 });
 
 //Search feature
 //fetching popular movies from API
 getMovies(Movies)
-async function getMovies(url){
-const res = await fetch(url)
-const data = await res.json()
-displayMovies(data.results)
-console.log(data.results);
+async function getMovies(url) {
+    const res = await fetch(url)
+    const data = await res.json()
+    displayMovies(data.results)
+    console.log(data.results);
 }
 
-function displayMovies(movies){
+function displayMovies(movies) {
     main.innerHTML = ' '
-    movies.forEach((movie)=>{
-        const {title,poster_path,vote_average,overview}= movie
-        const moviesElement=document.createElement('div')
+    movies.forEach((movie) => {
+        const { title, poster_path, vote_average, overview } = movie
+        const moviesElement = document.createElement('div')
         moviesElement.classList.add('movie')
         moviesElement.innerHTML = `
         <div class="card">
@@ -58,7 +58,7 @@ function displayMovies(movies){
         <div class= 'movie-info'>
         <h7>${title}   </h7>
         <br>
-        <span class="${getClassesByRating(vote_average) }"> ${vote_average} </span>
+        <span class="${getClassesByRating(vote_average)}"> ${vote_average} </span>
         <div id="overview">
         <br>
         <h7>Description:</h7>
@@ -74,28 +74,25 @@ function displayMovies(movies){
 
         //heart watchlist icon
         const favoriteButton = moviesElement.querySelector('.heart-icon');
-        favoriteButton.addEventListener('click', function() {
-            
-          // Use the 'this' keyword to reference the button that was clicked
-          addToFavorites(movie, this);
+        favoriteButton.addEventListener('click', function () {
+
+            // Use the 'this' keyword to reference the button that was clicked
+            addToFavorites(movie, this);
         });
-        
+
     })
-    
-    
+
+
 
 }
 
 function addToFavorites(movie, button) {
-
-    //to store movie in local storage
-    
     // Add the movie to the user's favorites list
-    
+
     button.textContent = 'Added to watchlist';
     // Disable the button to prevent it from being clicked again
     button.disabled = true;
-  
+
     // Create a new movie element
     const movieElement = document.createElement('div');
     movieElement.innerHTML = `
@@ -104,39 +101,39 @@ function addToFavorites(movie, button) {
       <img src="${image_Path + movie.poster_path}" alt="${movie.title}"> 
       <p>${movie.overview}</p> </div>
     `;
-  
+
     // Append the movie element to the watchpg element
     watchpg.appendChild(movieElement);
-  }
-  
+}
+
 
 
 //change color with different ratings.
 function getClassesByRating(rating) {
-    if(rating>=8){
+    if (rating >= 8) {
         return 'green'
     }
-    else if (rating>=5){
+    else if (rating >= 5) {
         return 'orange'
     }
     else {
-    return 'red'
+        return 'red'
     }
 }
 
-form.addEventListener('submit', (e)=>{
+form.addEventListener('submit', (e) => {
     e.preventDefault()
-    const searchValue = search.value 
-    if(searchValue && searchValue !=='') {
-        getMovies(search_url+searchValue)
+    const searchValue = search.value
+    if (searchValue && searchValue !== '') {
+        getMovies(search_url + searchValue)
         searchValue = ''
 
     }
-    else{
+    else {
         window.location.reload()
     }
 
-    
+
 })
 
 
@@ -149,7 +146,7 @@ contactbtn.addEventListener('click', () => {
     conditions.style.display = "none"
     watchpg.style.display = "none"
     login.style.display = "none"
-    
+
     cntpg.removeAttribute('hidden');
     cntpg.style.display = 'inline'
 
@@ -164,15 +161,15 @@ termsbtn.addEventListener('click', () => {
     watchpg.style.display = "none"
     login.style.display = "none"
 
-    
+
     conditions.removeAttribute('hidden')
     conditions.style.display = "flex"
-    
+
 
 })
-  
-//watchlist navigation button
 
+
+//watchlist navigation button
 const wishlistbtn = document.getElementById('wishlist')
 wishlistbtn.addEventListener('click', () => {
     search.style.display = "none"
@@ -186,23 +183,18 @@ wishlistbtn.addEventListener('click', () => {
 
 })
 
-//home navigation reload button
 
+//home navigation reload button
 const homebtn = document.getElementById('home')
 homebtn.addEventListener('click', () => {
     cntpg.style.display = "none"
     conditions.style.display = "none"
     location.reload();
-
-    
-   
-    
-
-} )
+})
 
 //contact us submit button
 let btnsubmit = document.getElementById('submitbtn')
-let inputs = document.querySelectorAll('input') 
+let inputs = document.querySelectorAll('input')
 
 btnsubmit.addEventListener('click', () => {
     inputs.forEach(input => input.value = '');
@@ -220,7 +212,7 @@ loginbtn.addEventListener('click', () => {
     conditions.style.display = "none"
     watchpg.style.display = "none";
 
-    
+
     login.removeAttribute('hidden')
     login.style.display = "inline";
 })
