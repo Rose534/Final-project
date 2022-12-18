@@ -13,6 +13,10 @@ const search_url = "https://api.themoviedb.org/3/search/movie?api_key=73767b2552
 const form = document.getElementById('form')
 const search = document.getElementById('search')
 const main = document.getElementById('main')
+const cntpg = document.getElementById('cntpg')
+const conditions = document.getElementById('terms_conditions')
+const watchpg = document.getElementById('watchpg')
+
 
 //Search feature
 //fetching popular movies from API
@@ -86,23 +90,27 @@ form.addEventListener('submit', (e)=>{
 
 
 //contact us navigation bar button
-const contactpg = document.getElementById('contactpg')
+
 const contactbtn = document.getElementById('contact')
 contactbtn.addEventListener('click', () => {
     search.style.display = "none"
     main.style.display = "none"
+    conditions.style.display = "none"
+    watchpg.style.display = "none"
     
-    contactpg.removeAttribute('hidden')
-    contactpg.style.display = "flex"
+    cntpg.removeAttribute('hidden');
+    cntpg.style.display = 'inline'
+
 })
 
 //Terms and conditions navigation button
-const conditions = document.getElementById('terms_conditions')
 const termsbtn = document.getElementById('terms')
 termsbtn.addEventListener('click', () => {
     search.style.display = "none"
     main.style.display = "none"
-    contactpg.style.display = "none"
+    cntpg.style.display = "none"
+    watchpg.style.display = "none"
+
     
     conditions.removeAttribute('hidden')
     conditions.style.display = "flex"
@@ -110,13 +118,17 @@ termsbtn.addEventListener('click', () => {
 
 })
   
-//wishlist navigation button
+//watchlist navigation button
+
 const wishlistbtn = document.getElementById('wishlist')
 wishlistbtn.addEventListener('click', () => {
     search.style.display = "none"
     main.style.display = "none"
-    contactpg.style.display = "none"
+    cntpg.style.display = "none"
     conditions.style.display = "none"
+
+    watchpg.removeAttribute('hidden')
+    watchpg.style.display = "inline";
 
 })
 

@@ -220,10 +220,6 @@ h7 {
 
 }
 
-#contactpg {
-    display: none;
-    margin-left: 300px;
-}
 
 /*contact us page
 #contactus {
@@ -351,12 +347,17 @@ h9{
 #submitbtn {
     width: 10%;
     height: 40px;
-    background-color: #191F2B;
+    background-color: #7777B5;
     margin-left: 250px;
     margin-top: 50px;
     border: none;
 }
 
+#cntpg {
+    display: hidden;
+}
 
-
+#watchpg {
+    display: hidden;
+}
 
