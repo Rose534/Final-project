@@ -57,6 +57,8 @@ function displayMovies(movies){
         //heart watchlist icon
         const favoriteButton = moviesElement.querySelector('.heart-icon');
         favoriteButton.addEventListener('click', function() {
+            //to store movie in local storage
+            ocalStorage.setItem(movie.id, JSON.stringify(movie));
           // Use the 'this' keyword to reference the button that was clicked
           addToFavorites(movie, this);
         });
@@ -79,7 +81,7 @@ function addToFavorites(movie, button) {
     // Create a new movie element
     const movieElement = document.createElement('div');
     movieElement.innerHTML = `
-      <h3>${movie.title}</h3>
+      <h10>${movie.title}</h10>
       <img src="${image_Path + movie.poster_path}" alt="${movie.title}">
       <p>${movie.overview}</p>
     `;
