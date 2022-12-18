@@ -1,5 +1,6 @@
 body {
     background-color:  #101825;
+    
 
 }
 
@@ -147,6 +148,8 @@ label {
     display: flex;
     flex-wrap: wrap;
     margin-left: 300px;
+    overflow: hidden;
+    height: 100%;
 
    
 
@@ -361,3 +364,8 @@ h9{
     display: hidden;
 }
 
+#home {
+    overflow: hidden;
+}
+
+.change-color { color: #ff0000; }

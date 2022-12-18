@@ -38,19 +38,27 @@ function displayMovies(movies){
         <div class="card">
         <img src= "${image_Path + poster_path}" alt= "${title}">
         <div class= 'movie-info'>
-        <h7>${title}</h7>
+        <h7>${title}   </h7>
         <br>
-        <span class="${getClassesByRating(vote_average)}"> ${vote_average} </span>
+        <span class="${getClassesByRating(vote_average) }"> ${vote_average} </span>
         <div id="overview">
         <br>
         <h7>Description:</h7>
         <br><br>
         ${overview}
+        <br><br>
+        <span class="heart-icon">Add to watchlist &#9829;</span>
         </div>
         </div>
         </div>`
         main.appendChild(moviesElement)
 
+
+        //heart watchlist icon
+    const heart_icon = document.querySelector('.heart-icon');
+    heart_icon.addEventListener('click', () => {
+        console.log('clicked')
+    })
         
     })
     
@@ -135,8 +143,13 @@ wishlistbtn.addEventListener('click', () => {
 //home navigation reload button
 
 const homebtn = document.getElementById('home')
-homebtn.addEventListener('click', function(){
+homebtn.addEventListener('click', () => {
+    cntpg.style.display = "none"
+    conditions.style.display = "none"
     location.reload();
+   
+    
+
 } )
 
 //contact us submit button
@@ -145,5 +158,6 @@ let inputs = document.querySelectorAll('input')
 
 btnsubmit.addEventListener('click', () => {
     inputs.forEach(input => input.value = '');
+
 
 })
