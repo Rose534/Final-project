@@ -16,6 +16,7 @@ const main = document.getElementById('main')
 const cntpg = document.getElementById('cntpg')
 const conditions = document.getElementById('terms_conditions')
 const watchpg = document.getElementById('watchpg')
+const login = document.getElementById('login')
 
 const storedMovies = [];
 for (let i = 0; i < localStorage.length; i++) {
@@ -189,7 +190,7 @@ homebtn.addEventListener('click', () => {
     cntpg.style.display = "none"
     conditions.style.display = "none"
     location.reload();
-    
+
     
    
     
@@ -204,4 +205,19 @@ btnsubmit.addEventListener('click', () => {
     inputs.forEach(input => input.value = '');
 
 
+})
+
+//login in button
+
+let loginbtn = document.getElementById('logout')
+loginbtn.addEventListener('click', () => {
+    search.style.display = "none"
+    main.style.display = "none"
+    cntpg.style.display = "none"
+    conditions.style.display = "none"
+    watchpg.style.display = "none";
+
+    
+    login.removeAttribute('hidden')
+    login.style.display = "inline";
 })

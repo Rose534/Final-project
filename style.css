@@ -108,8 +108,28 @@ body {
     padding: 75px;
     background: black;
     margin-top: 100px;
-   
+    display: none;
+    margin-left: 1450px;
+    
+}
 
+
+#login form {
+    margin-left: 450px;
+}
+
+#login #name1 {
+     margin-left: 45px;
+}
+
+
+#login #pass{
+     margin-left: 93px;
+
+}
+
+#login #email1 {
+    margin-left: 60px;
 }
 
 h4 {
@@ -141,6 +161,7 @@ label {
     padding-left: 7px;
     color:black;
     font-size: 16px;
+    margin-left: 168px;
 
 }
 
@@ -409,23 +430,19 @@ h9{
     padding: 20px;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: left;
-   
+    float: left;
   }
   
-  #terms-and-conditions h1 h2 {
-    color: black;
+  #terms-and-conditions h2 {
     margin-top: 0;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
-    
   }
   
   #terms-and-conditions p {
     margin: 10px 0;
     font-size: 14px;
     line-height: 1.5;
-   
   }
   
   #terms-and-conditions ul {
@@ -435,6 +452,8 @@ h9{
     line-height: 1.5;
   }
 
-  #para{
-    
+  #logout {
+    margin-top: -55px;
+    margin-left: 1150px;
+    cursor: pointer;
   }
