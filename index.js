@@ -17,6 +17,23 @@ const cntpg = document.getElementById('cntpg')
 const conditions = document.getElementById('terms_conditions')
 const watchpg = document.getElementById('watchpg')
 
+const storedMovies = [];
+for (let i = 0; i < localStorage.length; i++) {
+  const key = localStorage.key(i);
+  const value = localStorage.getItem(key);
+  storedMovies.push(JSON.parse(value));
+}
+
+// Display the stored movies in the watchpg element
+storedMovies.forEach((movie) => {
+  const movieElement = document.createElement('div');
+  movieElement.innerHTML = `
+    <h3>${movie.title}</h3>
+    <img src="${image_Path + movie.poster_path}" alt="${movie.title}">
+    <p>${movie.overview}</p>
+  `;
+  watchpg.appendChild(movieElement);
+});
 
 //Search feature
 //fetching popular movies from API
@@ -57,8 +74,7 @@ function displayMovies(movies){
         //heart watchlist icon
         const favoriteButton = moviesElement.querySelector('.heart-icon');
         favoriteButton.addEventListener('click', function() {
-            //to store movie in local storage
-            ocalStorage.setItem(movie.id, JSON.stringify(movie));
+            
           // Use the 'this' keyword to reference the button that was clicked
           addToFavorites(movie, this);
         });
@@ -70,10 +86,11 @@ function displayMovies(movies){
 }
 
 function addToFavorites(movie, button) {
+
+    //to store movie in local storage
+    
     // Add the movie to the user's favorites list
-    // ...
-  
-    // Update the button text to show that the movie has been added to the favorites list
+    
     button.textContent = 'Added to watchlist';
     // Disable the button to prevent it from being clicked again
     button.disabled = true;
