@@ -148,6 +148,7 @@ contactbtn.addEventListener('click', () => {
     main.style.display = "none"
     conditions.style.display = "none"
     watchpg.style.display = "none"
+    login.style.display = "none"
     
     cntpg.removeAttribute('hidden');
     cntpg.style.display = 'inline'
@@ -161,6 +162,7 @@ termsbtn.addEventListener('click', () => {
     main.style.display = "none"
     cntpg.style.display = "none"
     watchpg.style.display = "none"
+    login.style.display = "none"
 
     
     conditions.removeAttribute('hidden')
@@ -177,6 +179,7 @@ wishlistbtn.addEventListener('click', () => {
     main.style.display = "none"
     cntpg.style.display = "none"
     conditions.style.display = "none"
+    login.style.display = "none"
 
     watchpg.removeAttribute('hidden')
     watchpg.style.display = "inline";
@@ -220,4 +223,11 @@ loginbtn.addEventListener('click', () => {
     
     login.removeAttribute('hidden')
     login.style.display = "inline";
+})
+
+//login button 
+const loginbutton = document.getElementById('logButton')
+loginbutton.addEventListener('click', () => {
+    login.style.display = "none"
+
 })

@@ -110,27 +110,34 @@ body {
     margin-top: 100px;
     display: none;
     margin-left: 1450px;
+   
     
 }
 
 
 #login form {
     margin-left: 450px;
+    
 }
 
 #login #name1 {
      margin-left: 45px;
+     
 }
 
 
 #login #pass{
      margin-left: 93px;
+     
 
 }
 
 #login #email1 {
     margin-left: 60px;
+    
 }
+
+
 
 h4 {
     text-align: center;
@@ -154,7 +161,7 @@ label {
 }
 
 #logButton {
-    width: 300px;
+    width: 200px;
     height: 30px;
     border: none;
     border-radius: 10px;
