@@ -369,3 +369,8 @@ h9{
 }
 
 .change-color { color: #ff0000; }
+
+#watchpg {
+    display: hidden;
+    margin-left: 300px;
+}

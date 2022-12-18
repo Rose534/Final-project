@@ -55,10 +55,11 @@ function displayMovies(movies){
 
 
         //heart watchlist icon
-    const heart_icon = document.querySelector('.heart-icon');
-    heart_icon.addEventListener('click', () => {
-        console.log('clicked')
-    })
+        const favoriteButton = moviesElement.querySelector('.heart-icon');
+        favoriteButton.addEventListener('click', function() {
+          // Use the 'this' keyword to reference the button that was clicked
+          addToFavorites(movie, this);
+        });
         
     })
     
@@ -66,6 +67,17 @@ function displayMovies(movies){
 
 }
 
+function addToFavorites(movie, button) {
+    // Add the movie to the user's favorites list
+    // ...
+  
+    // Update the button text to show that the movie has been added to the favorites list
+    button.textContent = 'Added to watchlist';
+    // Disable the button to prevent it from being clicked again
+    button.disabled = true;
+  }
+
+  
 
 
 //change color with different ratings.
