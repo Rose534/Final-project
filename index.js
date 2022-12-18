@@ -31,7 +31,7 @@ storedMovies.forEach((movie) => {
     movieElement.innerHTML = `
     <div class="img2">
    <img src="${image_Path + movie.poster_path}" alt="${movie.title}">
-    <div id= "movieinfo">
+    <div class= "movieinfo">
     <h3>${movie.title}</h3>
     <p>${movie.overview}</p> </div> </div>
   `;
@@ -99,8 +99,9 @@ function addToFavorites(movie, button) {
     const movieElement = document.createElement('div');
     movieElement.innerHTML = `
       <div class="img2">
-      <h10>${movie.title}</h10>
       <img src="${image_Path + movie.poster_path}" alt="${movie.title}"> 
+      <div id= "movieinfo">
+      <h10>${movie.title}</h10>
       <p>${movie.overview}</p> </div>
     `;
 

@@ -363,15 +363,17 @@ h9{
     text-align: justify;
   }
 
-  #movieinfo{
+  .movieinfo{
     color: white;
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem 1rem 1rem;
     letter-spacing: 1px;
     margin-top: -60px;
-    
+}
 
+  #movieinfo{
+    margin-right: 100px;
   }
 
   #terms-and-conditions {
