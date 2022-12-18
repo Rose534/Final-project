@@ -226,28 +226,73 @@ h7 {
 }
 
 /*contact us page*/
-#contactpg{
-height: 100%; 
-    width: 900px; 
-    margin-left: 350px;
-    position: fixed; 
-    z-index: 1;
-    top: 0; 
+#contactus {
+    width: 450px;
+    background: white;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    margin-left: 550px;
+    margin-top: 100px;
+
+}
+
+#contactus #inputdata {
+    height: 40px;
+    width: 100%;
+    position: relative;
+
+}
+
+#contactus #inputdata input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    border-bottom: 2px solid silver;
+    color: black;
+}
+
+#inputdata input:focus ~ label,
+#inputdata input:valid ~ label  {
+    transform: translateY(-20px);
+    font-size: 15px;
+    color: #4158d0
+    
+
+}
+
+#contactus #inputdata label {
+    position: absolute;
+    bottom: 10px;
     left: 0;
-    background-color: #454569; 
-    padding-top: 60px; 
-    transition: 0.5s; 
-    float: left;}
-
-h8{
-    color: white;
-    font-size: 40px;
-    text-align: center;
+    color: grey;
+    pointer-events: none;
+    transition: all 0.3s ease;
 }
 
-p{
-    color: white;
-    margin-top: 70px;
-    text-align: center;
+#contactus #inputdata .underline {
+    position: absolute;
+    bottom: 0px;
+    height: 2px;
+    width: 100%;
 }
+
+#inputdata .underline:before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: black;
+    transform: scaleX(0);
+    transform: transform 0.3s ease;
+}
+
+#inputdata input:focus ~ .underline:before,
+#inputdata input:valid ~ .underline:before {
+    transform: scaleX(1);
+
+    
+   }
+
 

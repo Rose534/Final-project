@@ -128,10 +128,10 @@ homebtn.addEventListener('click', function(){
 } )
 
 //contact us submit button
-/*let btnsubmit = document.getElementById('submitbtn')
+let btnsubmit = document.getElementById('submitbtn')
 let inputs = document.querySelectorAll('input') 
 
 btnsubmit.addEventListener('click', () => {
     inputs.forEach(input => input.value = '');
 
-})*/
+})
