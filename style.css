@@ -225,7 +225,7 @@ h7 {
     margin-left: 300px;
 }
 
-/*contact us page*/
+/*contact us page
 #contactus {
     width: 450px;
     background: white;
@@ -293,6 +293,70 @@ h7 {
     transform: scaleX(1);
 
     
+   }*/
+
+   #contactus {
+    margin-left: 450px;
+    margin-top: 80px;
    }
+
+h8{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+h9{ 
+    color: white;
+    font-size: 20px;
+    margin-top: 170px;
+    
+   
+}
+
+#conus{
+    margin-left: 450px;
+}
+
+#cous{
+   
+    margin-left: 630px;
+    
+}
+
+#name {
+    width: 50%;
+    margin-left: 80px;
+    outline: none;
+   
+}
+
+#email {
+    width: 50%;
+    margin-left: 80px;
+    margin-top: 50px;
+    outline: none;
+}
+
+#msg {
+    width: 50%;
+    height: 80px;
+    margin-left: 80px;
+    margin-top: 50px;
+    outline: none;
+    
+   
+}
+
+#submitbtn {
+    width: 10%;
+    height: 40px;
+    background-color: #191F2B;
+    margin-left: 250px;
+    margin-top: 50px;
+    border: none;
+}
+
+
 
 
