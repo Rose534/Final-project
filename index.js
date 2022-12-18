@@ -75,8 +75,18 @@ function addToFavorites(movie, button) {
     button.textContent = 'Added to watchlist';
     // Disable the button to prevent it from being clicked again
     button.disabled = true;
+  
+    // Create a new movie element
+    const movieElement = document.createElement('div');
+    movieElement.innerHTML = `
+      <h3>${movie.title}</h3>
+      <img src="${image_Path + movie.poster_path}" alt="${movie.title}">
+      <p>${movie.overview}</p>
+    `;
+  
+    // Append the movie element to the watchpg element
+    watchpg.appendChild(movieElement);
   }
-
   
 
 
