@@ -318,6 +318,7 @@ h9{
 
 #cntpg {
     display: hidden;
+    overflow: hidden;
 }
 
 #watchpg {
@@ -337,18 +338,16 @@ h9{
 
 .img2 {
     display: flex;
-    margin-left: 50px;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
+    margin-left: 300px;
+    overflow: hidden;
+    height: 100%;
+    position: relative;
   }
   
   .img2 img {
-    width: 30%;
-    height: 30px;
-    border-radius: 5px;
+    width: 20%;
+   
   }
   
   .img2 h10 {
@@ -362,6 +361,17 @@ h9{
     font-size: 1.2rem;
     margin: 10px 0;
     text-align: justify;
+  }
+
+  #movieinfo{
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 1px;
+    margin-top: -60px;
+    
+
   }
 
   #terms-and-conditions {

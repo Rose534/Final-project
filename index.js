@@ -29,9 +29,11 @@ for (let i = 0; i < localStorage.length; i++) {
 storedMovies.forEach((movie) => {
     const movieElement = document.createElement('div');
     movieElement.innerHTML = `
+    <div class="img2">
+   <img src="${image_Path + movie.poster_path}" alt="${movie.title}">
+    <div id= "movieinfo">
     <h3>${movie.title}</h3>
-    <img src="${image_Path + movie.poster_path}" alt="${movie.title}">
-    <p>${movie.overview}</p>
+    <p>${movie.overview}</p> </div> </div>
   `;
     watchpg.appendChild(movieElement);
 });
@@ -56,7 +58,7 @@ function displayMovies(movies) {
         <div class="card">
         <img src= "${image_Path + poster_path}" alt= "${title}">
         <div class= 'movie-info'>
-        <h7>${title}   </h7>
+        <h7>${title}</h7>
         <br>
         <span class="${getClassesByRating(vote_average)}"> ${vote_average} </span>
         <div id="overview">
