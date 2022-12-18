@@ -98,9 +98,10 @@ function addToFavorites(movie, button) {
     // Create a new movie element
     const movieElement = document.createElement('div');
     movieElement.innerHTML = `
+      <div class="img2">
       <h10>${movie.title}</h10>
-      <img src="${image_Path + movie.poster_path}" alt="${movie.title}">
-      <p>${movie.overview}</p>
+      <img src="${image_Path + movie.poster_path}" alt="${movie.title}"> 
+      <p>${movie.overview}</p> </div>
     `;
   
     // Append the movie element to the watchpg element
@@ -188,6 +189,8 @@ homebtn.addEventListener('click', () => {
     cntpg.style.display = "none"
     conditions.style.display = "none"
     location.reload();
+    
+    
    
     
 

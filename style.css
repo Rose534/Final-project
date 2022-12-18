@@ -219,6 +219,7 @@ h7 {
 
 #terms_conditions {
     display: none;
+    margin-left: 350px;
     
 
 }
@@ -371,6 +372,69 @@ h9{
 .change-color { color: #ff0000; }
 
 #watchpg {
-    display: hidden;
+    display: flex;
     margin-left: 300px;
 }
+
+.img2 {
+    display: flex;
+    margin-left: 300px;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .img2 img {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+  }
+  
+  .img2 h10 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .img2 p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    text-align: justify;
+  }
+
+  #terms-and-conditions {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+   
+  }
+  
+  #terms-and-conditions h1 h2 {
+    color: black;
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: bold;
+    
+  }
+  
+  #terms-and-conditions p {
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.5;
+   
+  }
+  
+  #terms-and-conditions ul {
+    list-style-type: square;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  #para{
+    
+  }
