@@ -226,6 +226,28 @@ h7 {
 }
 
 /*contact us page*/
+#contactpg{
+height: 100%; 
+    width: 900px; 
+    margin-left: 350px;
+    position: fixed; 
+    z-index: 1;
+    top: 0; 
+    left: 0;
+    background-color: #454569; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+    float: left;}
 
+h8{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
 
+p{
+    color: white;
+    margin-top: 70px;
+    text-align: center;
+}
 
