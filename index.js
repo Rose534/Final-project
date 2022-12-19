@@ -98,9 +98,10 @@ function addToFavorites(movie, button) {
     // Create a new movie element
     const movieElement = document.createElement('div');
     movieElement.innerHTML = `
+      
       <div class="img2">
       <img src="${image_Path + movie.poster_path}" alt="${movie.title}"> 
-      <div id= "movieinfo">
+      <div class = "movieinfo">
       <h10>${movie.title}</h10>
       <p>${movie.overview}</p> </div>
     `;

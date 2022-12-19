@@ -336,9 +336,13 @@ h9{
 .change-color { color: #ff0000; }
 
 #watchpg {
-    display: flex;
+   
     margin-left: 300px;
     display: none;
+    color: white;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
 }
 
 .img2 {
@@ -385,9 +389,7 @@ h9{
     border-radius: 3px;
 }
 
-  #movieinfo{
-    margin-right: 100px;
-  }
+ 
 
   #terms-and-conditions {
     margin: 20px;
@@ -420,4 +422,9 @@ h9{
     margin-top: -55px;
     margin-left: 1150px;
     cursor: pointer;
+  }
+
+  h11 {
+    color: fff;
+    margin-left: 1450px;
   }
