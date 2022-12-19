@@ -19,18 +19,12 @@ const watchpg = document.getElementById('watchpg')
 const login = document.getElementById('login')
 
 //store movies in local storage
-const storedMovies = [];
 for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);
     const value = localStorage.getItem(key);
-    storedMovies.push(JSON.parse(value));
-}
-
-// Display the stored movies in the watchpg element
-storedMovies.forEach((movie) => {
+    const movie = JSON.parse(value);
     const movieElement = document.createElement('div');
     movieElement.innerHTML = `
-
     <div class="img2">
    <img src="${image_Path + movie.poster_path}" alt="${movie.title}">
     <div class= "movieinfo">
@@ -38,8 +32,7 @@ storedMovies.forEach((movie) => {
     <p>${movie.overview}</p> </div> </div>
   `;
     watchpg.appendChild(movieElement);
-});
-
+}
 //Search feature
 //fetching popular movies from API
 getMovies(Movies)
@@ -91,7 +84,7 @@ function displayMovies(movies) {
 }
 
 function addToFavorites(movie, button) {
-    // Add the movie to the user's favorites list
+    localStorage.setItem(movie.id, JSON.stringify(movie));
 
     button.textContent = 'Added to watchlist';
     // Disable the button to prevent it from being clicked again
