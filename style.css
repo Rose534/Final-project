@@ -428,3 +428,7 @@ h9{
     color: fff;
     margin-left: 1450px;
   }
+
+  .heart-icon {
+    cursor: pointer;
+  }
