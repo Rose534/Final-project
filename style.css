@@ -108,10 +108,9 @@ body {
     margin: 10 0 0 450px;
     overflow: hidden;
     padding: 75px;
-    background: black;
     margin-top: 100px;
     display: none;
-    margin-left: 1450px;
+    margin-left: 450px;
    
     
 }
@@ -252,6 +251,7 @@ h7 {
 #terms_conditions {
     display: none;
     margin-left: 350px;
+   ;
     
 
 }
