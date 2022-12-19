@@ -11,7 +11,8 @@ A computer that runs on either of the following; (Windows 7+, Linux, Mac OS) nod
 
 To use this repo on your machine, you require some simple steps:
 
-Step one
+# Step one
+
 Open a terminal / command line interface on your computer
 
 Clone the repo by using the following:
@@ -26,7 +27,7 @@ Use code . to open it in visual studio
 
 You can also open it in any editor of your choice, if vscode in unavailable.
 
-To view the published HTML as a website -
+
 To view this website, copy and paste this link onto your browser, make sure you have an internet connection.
 
     https://rose534.github.io/Final-project/
