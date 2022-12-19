@@ -136,7 +136,6 @@ form.addEventListener('submit', (e) => {
 
 
 //contact us navigation bar button
-
 const contactbtn = document.getElementById('contact')
 contactbtn.addEventListener('click', () => {
     search.style.display = "none"
@@ -198,12 +197,9 @@ let inputs = document.querySelectorAll('input')
 
 btnsubmit.addEventListener('click', () => {
     inputs.forEach(input => input.value = '');
-
-
 })
 
 //login in button
-
 let loginbtn = document.getElementById('logout')
 loginbtn.addEventListener('click', () => {
     search.style.display = "none"
@@ -216,6 +212,7 @@ loginbtn.addEventListener('click', () => {
     login.removeAttribute('hidden')
     login.style.display = "inline";
 })
+
 
 //login button 
 const loginbutton = document.getElementById('logButton')
