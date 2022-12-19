@@ -32,6 +32,10 @@ To view this website, copy and paste this link onto your browser, make sure you 
 
     https://rose534.github.io/Final-project/
 
+Install JavaScript dependencies
+
+        npm install
+
 # Authors
 
 This project was contributed to by: -Rose Kiragu

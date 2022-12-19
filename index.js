@@ -87,7 +87,6 @@ function addToFavorites(movie, button) {
     localStorage.setItem(movie.id, JSON.stringify(movie));
 
     button.textContent = 'Added to watchlist';
-    // Disable the button to prevent it from being clicked again
     button.disabled = true;
 
     // Create a new movie element
