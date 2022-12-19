@@ -18,6 +18,7 @@ const conditions = document.getElementById('terms_conditions')
 const watchpg = document.getElementById('watchpg')
 const login = document.getElementById('login')
 
+//store movies in local storage
 const storedMovies = [];
 for (let i = 0; i < localStorage.length; i++) {
     const key = localStorage.key(i);
@@ -29,10 +30,11 @@ for (let i = 0; i < localStorage.length; i++) {
 storedMovies.forEach((movie) => {
     const movieElement = document.createElement('div');
     movieElement.innerHTML = `
+
     <div class="img2">
    <img src="${image_Path + movie.poster_path}" alt="${movie.title}">
     <div class= "movieinfo">
-    <h3>${movie.title}</h3>
+    <h7>${movie.title}</h7>
     <p>${movie.overview}</p> </div> </div>
   `;
     watchpg.appendChild(movieElement);
@@ -102,7 +104,7 @@ function addToFavorites(movie, button) {
       <div class="img2">
       <img src="${image_Path + movie.poster_path}" alt="${movie.title}"> 
       <div class = "movieinfo">
-      <h10>${movie.title}</h10>
+      <h7>${movie.title}</h7>
       <p>${movie.overview}</p> </div>
     `;
 
