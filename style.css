@@ -1,8 +1,8 @@
 body {
     background-color:  #101825;
-    
-
 }
+
+
 
 #leftbar {
     height: 100%; 
@@ -22,7 +22,8 @@ body {
 h1 {
     color: white;
     margin-left: 18px;
-    font-size: 23px;
+    font-size: 25px;
+    font-family: 'Rubik Gemstones', cursive;
 }
 
 h2 {
@@ -30,6 +31,7 @@ h2 {
     margin-left: 18px;
     font-size: 18px;
     margin-top: 70px;
+   
 }
 
 h3 {
@@ -257,6 +259,7 @@ h7 {
    #contactus {
     margin-left: 450px;
     margin-top: 80px;
+    
    }
 
 h8{
@@ -317,12 +320,13 @@ h9{
 }
 
 #cntpg {
-    display: hidden;
+    display: none;
     overflow: hidden;
 }
 
 #watchpg {
-    display: hidden;
+    display: none;
+    overflow: hidden;
 }
 
 #home {
@@ -334,6 +338,7 @@ h9{
 #watchpg {
     display: flex;
     margin-left: 300px;
+    display: none;
 }
 
 .img2 {

@@ -226,6 +226,8 @@ loginbtn.addEventListener('click', () => {
 const loginbutton = document.getElementById('logButton')
 loginbutton.addEventListener('click', () => {
     login.style.display = "none"
-
+    loginbtn.remove()
+    alert("You are now logged in!") 
+    location.reload();
 })
 
