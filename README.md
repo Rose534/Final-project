@@ -32,9 +32,11 @@ To view this website, copy and paste this link onto your browser, make sure you 
 
     https://rose534.github.io/Final-project/
 
-Authors
+# Authors
+
 This project was contributed to by: -Rose Kiragu
 
-License
+# License
+
 The project is licensed under MIT.
 
