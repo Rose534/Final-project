@@ -192,6 +192,8 @@ const homebtn = document.getElementById('home')
 homebtn.addEventListener('click', () => {
     cntpg.style.display = "none"
     conditions.style.display = "none"
+    watchpg.style.display = "none"
+    login.style.display = "none"
     location.reload();
 })
 
