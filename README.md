@@ -25,16 +25,19 @@ Change directory to the repo folder:
 
 Use code . to open it in visual studio
 
+
 You can also open it in any editor of your choice, if vscode in unavailable.
+
+
+Install JavaScript dependencies
+
+        npm install
 
 
 To view this website, copy and paste this link onto your browser, make sure you have an internet connection.
 
     https://rose534.github.io/Final-project/
 
-Install JavaScript dependencies
-
-        npm install
 
 # Authors
 
